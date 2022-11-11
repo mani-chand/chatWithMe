@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.7c5386b6.css","mappings":"AAAA,YACI,YAAa,CACb,wBACD","sources":["utils/chatArea.css"],"sourcesContent":[".to-message{\r\n    display: flex;\r\n    justify-content:flex-end;\r\n   }"],"names":[],"sourceRoot":""}
