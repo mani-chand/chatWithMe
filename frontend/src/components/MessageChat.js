@@ -2,7 +2,7 @@
 import React,{useState} from "react";
 import axios from "axios";
 import styled from "styled-components";
-import { AiOutlineSend,AiOutlinePoweroff } from "react-icons/ai";
+import { AiOutlineSend,AiOutlinePoweroff } from "../sanity/node_modules/react-icons/ai";
 import ChatArea from "./ChatArea";
 export default function MessageChat({isLoggedIn,toId}) {
     const [Messages, setMessage] = useState({
