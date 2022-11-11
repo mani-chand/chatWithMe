@@ -26,10 +26,11 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
   });
 }
-const PORT = 5000 | process.env.PORT
+const PORT =process.env.PORT || 5000
+LOCAL_ADDRESS='0.0.0.0'
 mongoose.connect('mongodb+srv://manichand:root@cluster0.oll6q.mongodb.net/chatWithMe?retryWrites=true&w=majority').
 then(()=>{
-  app.listen(PORT,()=>{
+  app.listen(PORT,LOCAL_ADDRESS,()=>{
      console.log(`server is running on ${PORT}`)
 
   })
