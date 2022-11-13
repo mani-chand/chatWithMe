@@ -5,7 +5,7 @@ import './../utils/chatArea.css'
 const ChatArea = ({isLoggedIn,toId}) => {
     const [messages, setMessage] = useState([])
     const getMessages=async ()=>{
-        await axios.get(`/message/${isLoggedIn._id}/${toId}`).then(res => {  
+        await axios.get(`http://localhost:5000/message/${isLoggedIn._id}/${toId}`).then(res => {  
             setMessage(res.data)    
         })
     }

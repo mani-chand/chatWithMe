@@ -11,7 +11,7 @@ export default function MessageChat({isLoggedIn,toId}) {
         message:""
     });
     const handleSend = (e)=>{
-        axios.post('/sendmessage',Messages)
+        axios.post('http://localhost:5000/sendmessage',Messages)
         .then(res =>{
            console.log(res)
         }).catch(err=>{

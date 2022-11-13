@@ -9,7 +9,7 @@ const [user,setUser] = useState({
 })
 const handleSubmit=async()=>{
   try{
-    const response = await axios.post('/validate',user)
+    const response = await axios.post('http://localhost:5000/validate',user)
     console.log(response.data._id)
     if(response.data==="user does not exist"){
       document.querySelector('.error').innerText="user does not already exists with email"

@@ -16,7 +16,7 @@ const handleSubmit = async ()=>{
         document.querySelector('.error').innerText="Please enter same password and confirm password"    
       }else{
         document.querySelector('.error').innerText=""
-        const response = await axios.post('/',user)
+        const response = await axios.post('http://localhost:5000/',user)
         if(response.data==="created user"){
           window.location.replace("/login");
         }

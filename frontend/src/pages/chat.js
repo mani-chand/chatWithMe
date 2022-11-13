@@ -17,7 +17,7 @@ useEffect(()=>{
     }
     else{
   try{
-     axios.get(`/users/${user._id}`).then((res)=>{
+     axios.get(`http://localhost:5000/users/${user._id}`).then((res)=>{
      let data= res.data.map(user =>{
         user.selected=false
         return user;
